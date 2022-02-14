@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>New Game</h1>
+  <div class="group">
+    <% @letters.each do |letter| %>
+      <div class="list-group-style"><h3><%= letter %></h3></div>
+    <% end %>
+  </div>
+  <p>What's the longest word you can find?</p>
+  <form action="/score" method="post">
+    <input type="text" id="answer" name="answer"><input type="submit" id="submit" value="Play">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <%= hidden_field_tag :letters, @letters %>
+  </form>
+  <p>Your total score: <%= session[:score] %></p>
+</div>
