@@ -1,8 +1,7 @@
-require "json"
-require "open-uri"
+require 'json'
+require 'open-uri'
 
 class GamesController < ApplicationController
-
   def new
     session[:score] = 0 unless session[:score].present?
     @alphabet = ('A'..'Z').to_a
