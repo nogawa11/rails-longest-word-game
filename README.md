@@ -1,24 +1,37 @@
-# README
+# 📚 Longest Word Game
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A game where you try to create the longest word given a set amount of letters from the alphabet.
 
-Things you may want to cover:
+![Screen Shot 2022-03-14 at 6 31 21 PM](https://user-images.githubusercontent.com/94948064/158147169-3b86fc6f-8c0a-482f-97cf-8322c24b3485.png)
 
-* Ruby version
+<br>
+App home: https://nicole-longest-word-game.herokuapp.com/
+   
+## Getting Started
+### Setup
 
-* System dependencies
+Install gems
+```
+bundle install
+```
+Install JS packages
+```
+yarn install
+```
 
-* Configuration
+### DB Setup
+```
+rails db:create
+rails db:migrate
+```
 
-* Database creation
+### Run a server
+```
+rails s
+```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Built With
+- [Rails 6](https://guides.rubyonrails.org/) - Backend / Front-end
+- [Heroku](https://heroku.com/) - Deployment
+- [PostgreSQL](https://www.postgresql.org/) - Database
+- [Bootstrap](https://getbootstrap.com/) — Styling
