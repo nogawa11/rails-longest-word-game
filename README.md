@@ -1,4 +1,4 @@
-# 📚 Longest Word Game
+# Longest Word Game
 
 A game where you try to create the longest word given a set amount of letters from the alphabet.
 
